@@ -1,0 +1,15 @@
+[package]
+name = "supabase-api"
+version = "0.1.0"
+edition = "2021"
+authors=["Valery Stepanov <etonomick@gmal.com>"]
+description="Rust wrapper for Supabase API"
+repository="https://github.com/etonomick/supabase-api-rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15.0"
